@@ -60,7 +60,9 @@ int main(){
 		while (num != 0)
 		{	
 			value = num % 16;
-			if(value == 1){
+			if(value == 0){
+				decimal2[i] = '0';	
+			} else if(value == 1){
 				decimal2[i] = '1';
 			} else if(value == 2){
 				decimal2[i] = '2';
